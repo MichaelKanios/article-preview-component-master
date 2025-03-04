@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1440px; /* Μέγιστο πλάτος */
+  margin: 0 auto; /* Κεντράρισμα στη μέση */
+  background-color: hsl(210, 46%, 95%);
+  font-family: "Manrope", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Καλύπτει όλο το ύψος της οθόνης */
+
+}
+.card{
+  display: flex;
+  flex-direction: row;
+
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white; /* Για να ξεχωρίζει το περιεχόμενο */
+  padding: 0px 30px 0px 30px;
+
+}
+
+.line-break {
+  display: block; /* Μετατρέπει το span σε μπλοκ, σαν να είναι <div> */
+  margin-top: 10px; /* Προσθέτει κενό από πάνω */
+}
+.image img {
+  width: 100%;
+  height: 100%;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 24px;
+
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 16px;
+  font-weight: 500;
+
+  margin-bottom: 20px;
+}
+
+.credit {
+  display: flex;
+
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.avatar img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.name_date {
+  display: flex;
+  align-items: center;
+}
+
+.name {
+  font-weight: 700;
+}
+
+.date {
+  margin-left: 10px;
+  color: hsl(210, 8%, 45%);
+}
+
+.share {
+  margin-left: 20px;
+  color: hsl(228, 45%, 44%);
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 10px; /* Ελαφρύ padding για μικρές οθόνες */
+    display: flex;
+    flex-direction: column;
+  }
+  .card {
+    flex-direction: column;
+  }
+
+  .container {
+    padding: 15px; /* Μικρότερο padding στο container */
+  }
+
+  .title {
+    font-size: 18px; /* Μικρότερο μέγεθος τίτλου */
+  }
+
+  .description {
+    font-size: 14px; /* Μικρότερο μέγεθος περιγραφής */
+  }
+
+  .credit {
+    /* Ευθυγράμμιση αριστερά */
+  }
+
+  .name_date {
+     /* Ονόματα και ημερομηνία κάθετα */
+  }
+
+  .share {
+    margin-top: 10px; /* Απόσταση για το "Share" */
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

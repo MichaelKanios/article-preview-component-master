@@ -19,78 +19,73 @@ body {
 .card{
   display: flex;
   background-color: white;
-  
-  height: 528px;
-
+  width: 700px;
+  height: 300px;
+  box-shadow: 11px 10px 5px 0px rgba(188,188,188,0.75);
+  border-radius: 10px;
 }
 .container {
-  display: flex;
-  flex-direction: column;
-  justify-content:space-around;
-  align-items: center;
   background-color: white;
-   /* Για να ξεχωρίζει το περιεχόμενο */
-  padding: 0px 30px 0px 30px;
+  width:400px;
+  height: 300px;
+  padding: 25px;
+  border-top-right-radius: 10px; /* Στρογγυλοποιεί τη δεξιά επάνω γωνία */
+  border-bottom-right-radius: 10px; /* Στρογγυλοποιεί τη δεξιά κάτω γωνία */
 
 }
 
 .line-break {
   display: block; /* Μετατρέπει το span σε μπλοκ, σαν να είναι <div> */
-  margin-top: 10px; /* Προσθέτει κενό από πάνω */
+   /* Προσθέτει κενό από πάνω */
 }
 .image img {
-width: auto;
-object-fit: cover;
+width: 300px;
+height: 300px;
+border-radius: 10px 0 0 10px;
 }
 
 .title {
   font-weight: 700;
-  font-size: 24px;
+  font-size: 20px;
+  margin-bottom: 20px;
 
-  margin-bottom: 10px;
 }
 
 .description {
-  font-size: 16px;
-  font-weight: 500;
-
-  margin-bottom: 20px;
+  font-weight: 200;
+  font-size: 14px;
+  margin-bottom: 40px;
 }
 
 .credit {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
 
-
 }
-
+.first{display: flex;}
 .avatar img {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  margin-right: 10px;
-}
 
-.name_date {
-  display: flex;
-  align-items: center;
 }
+.name h4 , .name p {
 
-.name {
-  font-weight: 700;
-}
-
-.date {
+  font-size: 14px;
   margin-left: 10px;
-  color: hsl(210, 8%, 45%);
 }
+
 
 .share {
-  margin-left: 20px;
-  color: hsl(228, 45%, 44%);
-  cursor: pointer;
+width:30px;
+height: 30px;
+background-color:hsl(210, 46%, 95%) ;
+cursor: pointer;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
 }
 
 @media (max-width: 600px) {
@@ -115,17 +110,7 @@ object-fit: cover;
     font-size: 14px; /* Μικρότερο μέγεθος περιγραφής */
   }
 
-  .credit {
-    /* Ευθυγράμμιση αριστερά */
-  }
 
-  .name_date {
-     /* Ονόματα και ημερομηνία κάθετα */
-  }
-
-  .share {
-    margin-top: 10px; /* Απόσταση για το "Share" */
-  }
 }
 
 .attribution {
